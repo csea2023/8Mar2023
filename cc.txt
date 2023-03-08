@@ -1,0 +1,13 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+totalRecords = 10
+numberGlofRecreation = 4
+probGlof = numberGlofRecreation/totalRecords
+print("Uncondition probability of golf: = {}".format(probGlof))
+numberMedRiskSingle = 2
+numberMedRisk=3
+probMedRiskSingle = numberMedRiskSingle/totalRecords
+probMedRisk = numberMedRisk/totalRecords
+conditionalProbability= (probMedRiskSingle/probMedRisk)
+print("contional probability of Golf: {} ".format(conditionalProbability))
