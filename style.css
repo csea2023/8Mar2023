@@ -1,0 +1,198 @@
+
+.nav {
+
+    background-color: black;
+    overflow: hidden;
+    margin: 0px;
+    padding: 10px;
+  position: fixed;
+  width: 100%;
+   
+
+}
+.home{
+    
+    background-color: rgb(0, 0, 0);
+    color:whitesmoke ;
+    border-radius: 200px;
+    padding: 10px;
+    border: solid grey;
+   
+}
+.upload{
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    border:  1px solid rgba(255, 255, 255,0.1) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 180px;
+    background-color: rgba(37, 34, 34, 0.1);
+    padding: 10px 0px;
+    border-radius: 10px;
+
+  
+}
+#fileip{
+ visibility: hidden;
+ width: 0;
+ 
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.upload:hover{
+    cursor: pointer;
+    
+    background-color: rgba(0, 0, 0, 0.418)
+   
+}
+
+body{
+   
+    background: linear-gradient( to right, rgb(0, 26, 255), rgb(22, 228, 255));
+    margin: 0;
+}
+
+ 
+ .link{
+ 
+    flex-wrap: wrap;
+    display: flex;
+    
+ 
+  
+
+ }
+ .main{
+    flex-wrap: wrap;
+    display: flex;
+    background: linear-gradient( to right, rgb(0, 26, 255), rgb(22, 228, 255));
+    margin: 0;
+    justify-content: center;
+    align-items:center ;
+    width: 100%;
+    height: 100vh;
+}
+ 
+ #yt{
+    margin : 0;
+    border: 2px solid black;
+    outline: none;
+ }
+ @media only screen and (max-width: 600px) {
+   
+    .nav button {
+        position: relative;
+        display: block;
+      width: 100px;
+      justify-content: center;
+      
+    }
+
+    .link {
+        flex-direction: row;
+    }
+
+    .link input,
+    .link button {
+        width: 100%;
+        
+    }
+
+    .nav {
+        display: flex;
+        background-color: black;
+        overflow: hidden;
+        margin: 0px;
+        padding: 10px;
+      position: fixed;
+      width: 100%;
+       
+    
+    }
+    .home{
+        display: flex;
+        
+        background-color: rgb(0, 0, 0);
+        color:whitesmoke ;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px  solid grey;
+    
+    }
+    .upload{   
+        border:  1px solid rgba(255, 255, 255,0.1) ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        width: 150px;
+        background-color: rgba(37, 34, 34, 0.1);
+        padding: 10px 0px;
+        border-radius: 10px;
+    
+      
+    }
+ 
+}
+@media only screen and (max-width: 400px) {
+   
+    .nav button {
+        position: relative;
+        display: block;
+      width: 100px;
+      justify-content: center;
+      
+    }
+
+    .link {
+        flex-direction: row;
+    }
+
+    .link input,
+    .link button {
+        width: 100%;
+        
+    }
+
+    .nav {
+        display: flex;
+        background-color: black;
+        overflow: hidden;
+        margin: 0px;
+        padding: 10px;
+      position: fixed;
+      width: 100%;
+       
+    
+    }
+    .home{
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        color:whitesmoke ;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px  solid grey;
+    
+    }
+    .upload{   
+        border:  1px solid rgba(255, 255, 255,0.1) ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        width: 150px;
+        background-color: rgba(37, 34, 34, 0.1);
+        padding: 10px 0px;
+        border-radius: 10px;
+    
+      
+    }
+ .main{
+    flex-direction: column;
+ }
+}
