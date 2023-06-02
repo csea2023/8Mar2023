@@ -1,11 +1,13 @@
-@media (min-width: 992px){
+
+
+
 .chord{
     position: relative;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     color: transparent;
-    top: -1200px;
+    top: -900px;
     font-weight: 700;
     font-size: 100px;
     font-family: "Roboto",sans-serif;
@@ -21,13 +23,7 @@
         background-position: 2000px 0px;
     }
 }
-h3{
-    position: relative;
-    flex-wrap: wrap;
-    display: flex;
-    font-size: 50px;
-    left: -50px;
-}
+
 .nav {
 
     background-color: black;
@@ -175,9 +171,11 @@ body{
  
     
  }
-}
  
-     @media (min-width: 600px) and (max-width: 991px)  {
+
+
+
+     @media only screen and (min-width: 600px) and (max-width: 991px) {
         .nav button {
             position: relative;
             display: block;
@@ -284,11 +282,11 @@ body{
         position: relative;
         flex-wrap: wrap;
         display: flex;
-        justify-content: center;
+        justify-content: star;
         color: transparent;
-        top: -300px;
+        top: -830px;
         font-weight: 700;
-        font-size: 500px;
+        font-size: 100px;
         font-family: "Roboto",sans-serif;
        margin: 0;
         -webkit-text-stroke: 1px #fff;
@@ -301,7 +299,7 @@ body{
 
  
 
-@media (max-width: 599px)  {
+@media only screen and (max-width: 599px)  {
    
     .nav button {
         position: relative;
@@ -345,8 +343,8 @@ body{
         padding: 10px;
       border: none;
 
-    
     }
+    
     .upload{
         position: relative;
         flex-wrap: wrap;
@@ -362,7 +360,7 @@ body{
         color:aliceblue;
         left: -60px; 
         bottom: -70px;
-      
+    
     }
  .main{
     flex-direction: column;
@@ -370,7 +368,7 @@ body{
    padding: 0px 50px;
  }
 
-}
+
 
 .chord{
     position: relative;
@@ -378,9 +376,10 @@ body{
     display: flex;
     justify-content: center;
     color: transparent;
-    top: -590px;
+    top: -600px;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 36px;
+    text-align: center;
     font-family: "Roboto",sans-serif;
    margin: 0;
     -webkit-text-stroke: 1px #fff;
@@ -389,6 +388,8 @@ body{
    background-position: 0 0;
    animation: back 20s linear infinite;  
    left: 10px;  
+   flex-direction: row;
+
 }
 @keyframes back{
     100%{
@@ -425,5 +426,5 @@ body{
     border-radius: 30px;
     padding:10px 10px;
     width:200px;
- 
  }
+}
