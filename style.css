@@ -1,0 +1,295 @@
+.chord{
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    color: transparent;
+    top: -900px;
+    font-weight: 700;
+    font-size: 100px;
+    font-family: "Roboto",sans-serif;
+   margin: 0;
+    -webkit-text-stroke: 1px #fff;
+   background: url(back.png);
+   -webkit-background-clip: text;
+   background-position: 0 0;
+   animation: back 20s linear infinite;    
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0px;
+    }
+}
+.nav {
+
+    background-color: black;
+    overflow: hidden;
+    margin: 0px;
+    padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+   
+
+}
+.home{
+    
+    background-color: rgb(0, 0, 0);
+    color:rgb(248, 247, 247) ;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+
+   
+}
+.abt{
+    
+    background-color: rgb(0, 0, 0);
+    color:rgb(248, 247, 247) ;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+
+   
+}
+.upload{
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    border:  1px solid rgba(255, 255, 255,0.1) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 180px;
+    background-color: rgb(167, 65, 207);
+    padding: 10px 0px;
+    border-radius: 10px;
+    color:aliceblue;
+
+  
+}
+#fileip{
+ visibility: hidden;
+ width: 0;
+ 
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:0px 100px ;
+
+
+}
+.upload:hover{
+    cursor: pointer;
+    
+    background-color: rgba(0, 0, 0, 0.418);
+   
+}
+.link button:hover{
+    cursor: pointer;
+    
+    background-color: rgba(0, 0, 0, 0.418);
+   
+}
+
+body{
+   
+    background-color: rgb(28, 11, 77);
+    margin: 0;
+}
+
+ 
+ .main{
+    flex-wrap: wrap;
+    display: flex;
+    background-color: rgb(28, 11, 77);
+    margin: 0;
+    justify-content: center;
+    align-items:center ;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 50px;
+    
+}
+.link{
+    padding: 50px 100px;
+}
+.link button{
+    position: relative;
+    border:  1px solid rgba(255, 255, 255,0.1) ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 180px;
+    background-color: rgb(167, 65, 207);
+    padding: 9px 0px;
+    border-radius: 10px;
+    right: -15px;
+    color: aliceblue;
+ 
+}
+ .home:hover{
+    color:rgb(248, 0, 116);
+    
+    transition: 0.5s ease;
+ }
+ .abt:hover{
+    color:rgb(248, 0, 116);
+    
+    transition: 0.5s ease;
+ }
+ 
+ #yt{
+    margin : 0;
+    border: 5px solid rgb(33, 192, 144);
+    outline: none;
+    padding-right: 50px;
+    border-radius: 30px;
+    padding:10px 10px;
+    width:300px;
+ 
+    
+ }
+ 
+
+ @media only screen and (max-width: 600px) {
+   
+    .nav button {
+        display: block;
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+   
+  .link input{
+    width: 100%;
+  }
+  .link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
+.nav{
+        display: flex;
+        background-color: black;
+        overflow: hidden;
+        margin: 0px;
+        padding: 10px;
+      position: fixed;
+      width: 100%;
+       
+    
+    }
+    .home{
+        display: flex; 
+        background-color: rgb(0, 0, 0);
+        color:whitesmoke ;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px  solid grey;
+    
+    }
+    .upload{
+        
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        border:  1px solid rgba(255, 255, 255,0.1) ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        width: 140px;
+        background-color: rgb(167, 65, 207);
+        padding: 10px 0px;
+        border-radius: 10px;
+        color:aliceblue; 
+    }
+    .link {
+        flex-direction: row;
+        padding: 90px;
+    }
+    .main{
+        flex-direction: column;
+        margin: 0;
+        padding: 0px 50px;
+      }
+     }
+
+ 
+
+@media only screen and (max-width: 400px) {
+   
+    .nav button {
+        position: relative;
+        display: block;
+      width: 100px;
+      justify-content: center;
+      
+    }
+
+    .link {
+        flex-direction: row;
+    }
+
+    .link input,
+    .link button {
+        width: 100%;
+        
+    }
+
+    .nav{
+        display: flex;
+        background-color: black;
+        overflow: hidden;
+        margin: 0px;
+        padding: 10px;
+      position: fixed;
+      width: 100%;
+       
+    
+    }
+    .home{
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        color:whitesmoke ;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px  solid grey;
+    
+    }
+    .upload{
+        position: relative;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        border:  1px solid rgba(255, 255, 255,0.1) ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        width: 150px;
+        background-color: rgb(167, 65, 207);
+        padding: 10px 0px;
+        border-radius: 10px;
+        color:aliceblue;
+    
+      
+    }
+ .main{
+    flex-direction: column;
+   margin: 0;
+   padding: 0px 50px;
+ }
+
+}
