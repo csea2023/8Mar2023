@@ -47,3 +47,23 @@ function submitForm() {
         console.error('Error:', error);
     });
 }
+function generateMusicSymbol() {
+    const symbol = document.createElement('span');
+    symbol.className = 'music-symbol';
+    
+    // Set the symbol's position and appearance properties randomly
+    symbol.style.top = `${Math.random() * 100}%`;
+    symbol.style.left = `${Math.random() * 100}%`;
+    symbol.style.fontSize = `${Math.random() * 2 + 1}rem`; // Adjust the symbol's size range
+    
+    // Append the symbol to the background
+    document.querySelector('.main').appendChild(symbol);
+    
+    // Remove the symbol after a certain duration
+    setTimeout(() => {
+      symbol.remove();
+    }, 3000); // Adjust the duration as needed
+  }
+  
+  // Generate music symbols periodically
+  setInterval(generateMusicSymbol, 1000);
