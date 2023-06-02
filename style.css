@@ -1,13 +1,11 @@
-
-
-
+@media (min-width: 992px){
 .chord{
     position: relative;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     color: transparent;
-    top: -890px;
+    top: -1200px;
     font-weight: 700;
     font-size: 100px;
     font-family: "Roboto",sans-serif;
@@ -177,84 +175,137 @@ body{
  
     
  }
- 
-
- @media only screen and (max-width: 600px) {
-   
-    .nav button {
-        display: block;
-      width: 100px;
-      justify-content: center;
-      align-items: center;
-      
-    }
-
-   
-  .link input{
-    width: 100%;
-  }
-  .link{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
 }
-
-
-
-.nav{
-        display: flex;
-        background-color: black;
-        overflow: hidden;
-        margin: 0px;
-        padding: 10px;
-      position: fixed;
-      width: 100%;
-       
+ 
+     @media (min-width: 600px) and (max-width: 991px)  {
+        .nav button {
+            position: relative;
+            display: block;
+          justify-content: center;
+          
+        }
     
-    }
-    .home{
-        display: flex; 
-        background-color: rgb(0, 0, 0);
-        color:whitesmoke ;
-        border-radius: 20px;
-        padding: 10px;
-        border: 2px  solid grey;
+        .link {
+            flex-direction: row;
+        }
     
-    }
-    .upload{
+        .link input,
+        .link button {
+            width :100%;
+
+            
+        }
+    
+        .nav{
+            display: flex;
+            background-color: black;
+            overflow: hidden;
+            margin: 0px;
+            padding: 3px;
+          position: fixed;
+          width: 100%;
+           
         
+        }
+        .home{
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            color:whitesmoke ;
+            border-radius: 20px;
+            padding: 10px;
+          border: none;
+    
+        
+        }
+        .upload{
+            position: relative;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            border:  1px solid rgba(255, 255, 255,0.1) ;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            width: 80px;
+            background-color: rgb(167, 65, 207);
+            padding: 10px 0px;
+            border-radius: 10px;
+            color:aliceblue;
+            left: -60px; 
+            bottom: -70px;
+          
+        }
+     .main{
+        flex-direction: column;
+       margin: 0;
+       padding: 0px 50px;
+     }
+    
+    
+    
+   
+    @keyframes back{
+        100%{
+            background-position: 2000px 0px;
+        }
+    }
+    .abt{
+        
+        background-color: rgb(0, 0, 0);
+        color:rgb(248, 247, 247) ;
+        padding: 10px;
+        font-weight: 700;
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        border: none;
+    
+       
+    }
+    .home:hover{
+        color:rgb(248, 0, 116);
+        
+        transition: 0.5s ease;
+     }
+     .abt:hover{
+        color:rgb(248, 0, 116);
+        
+        transition: 0.5s ease;
+     }
+     #yt{
+        margin : 0;
+        border: 5px solid rgb(33, 192, 144);
+        outline: none;
+        padding-right: 50px;
+        border-radius: 30px;
+        padding:10px 10px;
+        width:200px;
+     
+     }
+     .chord{
+        position: relative;
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
-        border:  1px solid rgba(255, 255, 255,0.1) ;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        width: 140px;
-        background-color: rgb(167, 65, 207);
-        padding: 10px 0px;
-        border-radius: 10px;
-        color:aliceblue; 
+        color: transparent;
+        top: -300px;
+        font-weight: 700;
+        font-size: 500px;
+        font-family: "Roboto",sans-serif;
+       margin: 0;
+        -webkit-text-stroke: 1px #fff;
+       background: url(back.png);
+       -webkit-background-clip: text;
+       background-position: 0 0;
+       animation: back 20s linear infinite;    
     }
-    .link {
-        flex-direction: row;
-        padding: 90px;
-    }
-    .main{
-        flex-direction: column;
-        margin: 0;
-        padding: 0px 50px;
-      }
-     }
+}
 
  
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 599px)  {
    
     .nav button {
         position: relative;
-        display: block;
-      width: 100px;
+        display: fixed;
       justify-content: center;
       
     }
@@ -265,8 +316,14 @@ body{
 
     .link input,
     .link button {
-        width: 100%;
+        width: 80px;
+        position: relative;
+        left: -60px;
+        bottom: -50px;
         
+    }
+    .link button{
+     font-size: 20px;
     }
 
     .nav{
@@ -274,7 +331,7 @@ body{
         background-color: black;
         overflow: hidden;
         margin: 0px;
-        padding: 10px;
+        padding: 3px;
       position: fixed;
       width: 100%;
        
@@ -286,7 +343,8 @@ body{
         color:whitesmoke ;
         border-radius: 20px;
         padding: 10px;
-        border: 2px  solid grey;
+      border: none;
+
     
     }
     .upload{
@@ -296,13 +354,14 @@ body{
         justify-content: center;
         border:  1px solid rgba(255, 255, 255,0.1) ;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        width: 150px;
+        font-size: 15px;
+        width: 80px;
         background-color: rgb(167, 65, 207);
         padding: 10px 0px;
         border-radius: 10px;
         color:aliceblue;
-    
+        left: -60px; 
+        bottom: -70px;
       
     }
  .main{
@@ -312,3 +371,59 @@ body{
  }
 
 }
+
+.chord{
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    color: transparent;
+    top: -590px;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Roboto",sans-serif;
+   margin: 0;
+    -webkit-text-stroke: 1px #fff;
+   background: url(back.png);
+   -webkit-background-clip: text;
+   background-position: 0 0;
+   animation: back 20s linear infinite;  
+   left: 10px;  
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0px;
+    }
+}
+.abt{
+    
+    background-color: rgb(0, 0, 0);
+    color:rgb(248, 247, 247) ;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+
+   
+}
+.home:hover{
+    color:rgb(248, 0, 116);
+    
+    transition: 0.5s ease;
+ }
+ .abt:hover{
+    color:rgb(248, 0, 116);
+    
+    transition: 0.5s ease;
+ }
+ #yt{
+    margin : 0;
+    border: 5px solid rgb(33, 192, 144);
+    outline: none;
+    padding-right: 50px;
+    border-radius: 30px;
+    padding:10px 10px;
+    width:200px;
+ 
+ }
