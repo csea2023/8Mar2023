@@ -1,16 +1,19 @@
 
 
-
+body{
+    overflow-x: hidden;
+}
 .chord{
     position: relative;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     color: transparent;
-    top: -900px;
+    top: -850px;
     font-weight: 700;
     font-size: 100px;
     font-family: "Roboto",sans-serif;
+    /* font-family: 'Bebas Neue', sans-serif; */
    margin: 0;
     -webkit-text-stroke: 1px #fff;
    background: url(back.png);
@@ -25,7 +28,8 @@
 }
 
 .nav {
-
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     overflow: hidden;
     margin: 0px;
@@ -47,7 +51,16 @@
     font-family: "Roboto", sans-serif;
     border: none;
 
-   
+
+
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    
+}
+button{
+    cursor: pointer;
 }
 .abt{
     
@@ -58,6 +71,7 @@
     font-size: 15px;
     font-family: "Roboto", sans-serif;
     border: none;
+    margin-right: 20px;
 
    
 }
