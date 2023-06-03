@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
     <title>Chord Savant</title>
 </head>
 
@@ -20,12 +20,12 @@
     </div>
     <div class="main">
         <div class="item">
-            <input type="file" id="fileip" accept="audio/*" onchange="submitForm()">
+            <input type="file" id="fileip" accept="audio/*" onchange="validateForm()">
             <label for="fileip" class="upload">Upload file</label>
         </div>
         <div class="link">
 
-            <input type="text" id="yt" accept="link" placeholder="->yt link here<-">
+            <input type="text" id="yt" accept="link" placeholder="YouTube link">
             <button type="submit" class="sub">Submit</button>
 
         </div>

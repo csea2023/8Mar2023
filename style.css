@@ -19,11 +19,11 @@ body{
    background: url(back.png);
    -webkit-background-clip: text;
    background-position: 0 0;
-   animation: back 20s linear infinite;    
+   animation: back 7s linear infinite;    
 }
 @keyframes back{
     100%{
-        background-position: 2000px 0px;
+        background-position: 1000px 1000px;
     }
 }
 
@@ -37,6 +37,7 @@ body{
   position: fixed;
   width: 100%;
   z-index: 1;
+
 
    
 
