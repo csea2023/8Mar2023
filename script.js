@@ -11,7 +11,7 @@ function validateForm() {
       console.log('File is valid.');
       // Perform any desired action for a valid MP3 file
     }
-    else {
+    else  {
       // Invalid file type
       alert('Please upload an MP3 file.');
 
